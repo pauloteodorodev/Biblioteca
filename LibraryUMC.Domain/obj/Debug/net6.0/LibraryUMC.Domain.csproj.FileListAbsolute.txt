@@ -1,0 +1,12 @@
+C:\Users\paulo\Desktop\LibraryUMC\LibraryUMC.Domain\bin\Debug\net6.0\LibraryUMC.Domain.deps.json
+C:\Users\paulo\Desktop\LibraryUMC\LibraryUMC.Domain\bin\Debug\net6.0\LibraryUMC.Domain.dll
+C:\Users\paulo\Desktop\LibraryUMC\LibraryUMC.Domain\bin\Debug\net6.0\LibraryUMC.Domain.pdb
+C:\Users\paulo\Desktop\LibraryUMC\LibraryUMC.Domain\obj\Debug\net6.0\LibraryUMC.Domain.csproj.AssemblyReference.cache
+C:\Users\paulo\Desktop\LibraryUMC\LibraryUMC.Domain\obj\Debug\net6.0\LibraryUMC.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paulo\Desktop\LibraryUMC\LibraryUMC.Domain\obj\Debug\net6.0\LibraryUMC.Domain.AssemblyInfoInputs.cache
+C:\Users\paulo\Desktop\LibraryUMC\LibraryUMC.Domain\obj\Debug\net6.0\LibraryUMC.Domain.AssemblyInfo.cs
+C:\Users\paulo\Desktop\LibraryUMC\LibraryUMC.Domain\obj\Debug\net6.0\LibraryUMC.Domain.csproj.CoreCompileInputs.cache
+C:\Users\paulo\Desktop\LibraryUMC\LibraryUMC.Domain\obj\Debug\net6.0\LibraryUMC.Domain.dll
+C:\Users\paulo\Desktop\LibraryUMC\LibraryUMC.Domain\obj\Debug\net6.0\refint\LibraryUMC.Domain.dll
+C:\Users\paulo\Desktop\LibraryUMC\LibraryUMC.Domain\obj\Debug\net6.0\LibraryUMC.Domain.pdb
+C:\Users\paulo\Desktop\LibraryUMC\LibraryUMC.Domain\obj\Debug\net6.0\ref\LibraryUMC.Domain.dll
