@@ -3,16 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LibraryUMC.Domain.Entities.Usuario;
 
-namespace LibraryUMC.Domain.Entities.User;
+namespace LibraryUMC.Domain.Entities;
 
-public class Municipio
+public class Perfil
 {
     public int Id { get; set; }
-    public string Sigla { get; set; }
     public string Nome { get; set; }
-
-    public Estado Estado { get; set; }
+    public string Sigla { get; set; }
+    public bool Ativo { get; set; }
 }
 

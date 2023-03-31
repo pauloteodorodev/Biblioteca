@@ -1,8 +1,10 @@
 ﻿using System.Net;
 using LibraryUMC.Domain.DTO.UsuarioDTO;
+using LibraryUMC.Domain.Repositories;
+using LibraryUMC.Domain.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LibraryUMC.Api.Controllers.Usuario;
+namespace LibraryUMC.Api.Controllers.UsuarioController;
 
 
 [ApiController]
@@ -10,9 +12,18 @@ namespace LibraryUMC.Api.Controllers.Usuario;
 
 public class UsuarioController : ControllerBase
 {
-    [HttpPost("cadastrar-novo")]
-    public Task<IActionResult> CadastrarUsuario([FromBody] UsuarioDTO usuarioDto)
+    private readonly IUsuarioRepositorio usuarioRepositorio;
+
+    public UsuarioController(IUsuarioRepositorio connectionString)
     {
+        this.usuarioRepositorio = connectionString;
+    }
+
+    [HttpPost("cadastrar-novo")]
+    public  Task<IActionResult> CadastrarUsuario([FromBody] UsuarioDTO usuarioDto)
+    {
+        var service = new UsuarioService(usuarioRepositorio);
+        service.CadastrarUsuario(usuarioDto);
         return Task.FromResult<IActionResult>(StatusCode((int)HttpStatusCode.OK));
     }
     

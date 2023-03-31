@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LibraryUMC.Domain.Entities.User;
 
-namespace LibraryUMC.Domain.Entities.Usuario;
-
+namespace LibraryUMC.Domain.Entities;
 public class Estado
 {
     public int Id { get; set; }

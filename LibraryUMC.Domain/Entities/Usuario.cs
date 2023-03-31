@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LibraryUMC.Domain.Entities.Compartilhada;
-using LibraryUMC.Domain.Entities.Usuario;
+using LibraryUMC.Domain.DTO.UsuarioDTO;
 
-namespace LibraryUMC.Domain.Entities.User;
+namespace LibraryUMC.Domain.Entities;
 
 public class Usuario : EntidadeBase
 {

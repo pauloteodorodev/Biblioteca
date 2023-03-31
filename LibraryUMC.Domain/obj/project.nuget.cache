@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DmIkZtxXK7qLA0YjuO9yR6voUki2hNxJn4HgbkHlywoB/2shkZbIyk6aLT+8gjBxC0s55JSzZIXy8UDz0Vr4Wg==",
+  "dgSpecHash": "QavS9qrvzHnk0fdMnHfYSYOmy10KzaEa/AS12TtX8Kcxe5Kj1j/CGkJkpq37xTUsap9pRvuEmoWmkaoktlfCCA==",
   "success": true,
   "projectFilePath": "C:\\Users\\paulo\\Desktop\\LibraryUMC\\LibraryUMC.Domain\\LibraryUMC.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\paulo\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512"
+  ],
   "logs": []
 }

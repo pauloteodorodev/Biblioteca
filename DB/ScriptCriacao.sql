@@ -11,11 +11,11 @@ CREATE TABLE pessoa (
     cpf VARCHAR(11) NOT NULL
 );
 
+
+
 -- Tabela Autor: representa um autor de livros
 CREATE TABLE autor (
     id CHAR(36) NOT NULL PRIMARY KEY DEFAULT (UUID()),
-    nome VARCHAR(100) NOT NULL,
-    cpf VARCHAR(11) NOT NULL,
     biografia VARCHAR(500),
     genero_literario VARCHAR(100),
     is_active BOOLEAN NOT NULL,
@@ -44,17 +44,22 @@ CREATE TABLE livro (
 -- Tabela Estado: representa um estado da federação do Brasil
 CREATE TABLE estado (
     id CHAR(36) NOT NULL PRIMARY KEY DEFAULT (UUID()),
-    sigla VARCHAR(2) NOT NULL,
-    nome VARCHAR(100) NOT NULL
+    CodigoUf INT          NOT NULL,
+    Nome     VARCHAR (50) NOT NULL,
+    Uf       CHAR     (2)  NOT NULL,
+    Regiao   INT          NOT NULL,
+    INDEX idx_estado_uf (Uf)
 );
 
 -- Tabela Municipio: representa um município do Brasil
 CREATE TABLE municipio (
     id CHAR(36) NOT NULL PRIMARY KEY DEFAULT (UUID()),
-    nome VARCHAR(100) NOT NULL,
-    estado_id CHAR(36) NOT NULL,
-    FOREIGN KEY (estado_id) REFERENCES estado(id)
+    Codigo INT          NOT NULL,
+    Nome     VARCHAR(255) NOT NULL,
+    uf_id    CHAR(2)      NOT NULL,
+    FOREIGN KEY (uf_id) REFERENCES estado(Uf)
 );
+
 
 -- Tabela Endereco: representa um endereço postal
 CREATE TABLE endereco (
@@ -75,4 +80,17 @@ CREATE TABLE perfil (
     nome VARCHAR(100) NOT NULL,
     sigla VARCHAR(10) NOT NULL,
     is_active BOOLEAN NOT NULL
+);
+
+-- Tabela Usuario: representa um usuário do sistema
+CREATE TABLE usuario (
+id CHAR(36) NOT NULL PRIMARY KEY DEFAULT (UUID()),
+email VARCHAR(100) NOT NULL,
+telefone_fixo VARCHAR(20),
+telefone_celular VARCHAR(20) NOT NULL,
+ativo BOOLEAN NOT NULL,
+endereco_id CHAR(36) NOT NULL,
+pessoa_id CHAR(36) NOT NULL,
+FOREIGN KEY (endereco_id) REFERENCES endereco(id),
+FOREIGN KEY (pessoa_id) REFERENCES pessoa(id)
 );

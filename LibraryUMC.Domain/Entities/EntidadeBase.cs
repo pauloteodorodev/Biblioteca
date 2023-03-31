@@ -8,11 +8,6 @@ namespace LibraryUMC.Domain.Entities;
 
 public abstract class EntidadeBase
 {
-    public Guid Id { get; private set; }
-
-    protected EntidadeBase()
-    {
-        Id = Guid.NewGuid();
-    }
+    public Guid Id { get; set; }
 }
 
